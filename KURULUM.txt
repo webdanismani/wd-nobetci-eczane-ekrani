@@ -1,0 +1,31 @@
+WD Nöbetçi Eczane Ekranı 1.0.0
+Web Danışmanı · webdanismani.com · Destek: oblifex.com
+Ücretsizdir, satılamaz (CC BY-NC-SA 4.0).
+
+GEREKSİNİMLER
+- PHP 8.0 veya üstü, PDO (SQLite veya MySQL), mbstring, cURL
+
+KURULUM
+1) Bu klasörün içindekileri hostinginize yükleyin (alt alan adı veya alt klasör).
+2) Tarayıcıda adresi açın; kurulum sihirbazı açılır.
+3) Veritabanı türünü seçin (SQLite önerilir), işletme adını ve yönetici hesabını girin.
+4) data/ klasörü yazılabilir olmalıdır (755 veya 775).
+   Nginx kullanıyorsanız: location ~ ^/(data|app|lang)/ { deny all; }
+
+İLK AYARLAR
+- Panodaki "Örnek verileri sil" düğmesiyle kurgusal eczaneleri silin.
+- Eczanem: telefon, adres, konum (Google Haritalar'da sağ tık > koordinat), çalışma saatleri, nöbet değişim saati.
+- Eczaneler ve Nöbet çizelgesi: nöbet listesini girin (takvim, toplu yapıştırma veya sıralı çizelge).
+- İsterseniz Veri kaynağı sayfasından kendi nöbetçi eczane JSON adresinizi girin.
+
+TV'DE AÇMA
+- Pano sayfasındaki ekran adresini vitrindeki TV'nin tarayıcısında tam ekran açın.
+- Android TV kutusu: Fully Kiosk Browser gibi bir kiosk uygulamasıyla açılışta başlatın.
+- Raspberry Pi: chromium --kiosk "ekran adresi"
+
+GÜNCELLEME
+- data/ dışındaki dosyaları yeni sürümle değiştirin; verileriniz korunur.
+
+DESTEK
+- Sorular ve hata bildirimleri: https://oblifex.com webmaster destek forumu
+- Kurulum ve özel geliştirme: https://webdanismani.com
